@@ -19,10 +19,10 @@ function displayLibrary(){
         const list=document.createElement("li");
         list.setAttribute("class","book");
         list.setAttribute("data-index",i);
-        list.innerHTML=`<h3>${library[i].bookName}<h3>
-                        <p>${library[i].bookAuthor}</p>
-                         <p>${library[i].bookPages}</p>
-                          <button>${library[i].status}</button>
+        list.innerHTML=`<h3>Title: ${library[i].bookName}<h3>
+                        <p>Author: ${library[i].bookAuthor}</p>
+                         <p>Pages: ${library[i].bookPages}</p>
+                         <p>Status: <button>${library[i].status}</button></p>
         `
         theLib.appendChild(list);
     }

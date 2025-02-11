@@ -1,0 +1,35 @@
+html{
+    font-size:16px;
+    font-family:sans-serif;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+li{
+    list-style: none;
+}
+.library{
+    display:flex;
+    border:1px solid;
+    width:70vw;
+    margin:auto;
+    gap:2rem;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:2rem;
+}
+li.book{
+    padding:1rem;
+    border:1px solid;
+    width:20rem;
+    height:300px;
+}
+li.book h3{
+    font-size:1.5rem;
+} 
+li.book p{
+    font-size:1rem;
+    color:grey;
+}
