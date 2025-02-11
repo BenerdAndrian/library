@@ -33,3 +33,25 @@ li.book p{
     font-size:1rem;
     color:grey;
 }
+form{
+    width:50vw;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:1;
+    background-color:grey;
+    padding:2rem;
+    display:none;
+}
+form h2{
+    text-align:center;
+}
+form label{
+    display:block;
+    font-size:1.3rem;
+}
+form input{
+    width:100%;
+    font-size:1.2rem;
+}
