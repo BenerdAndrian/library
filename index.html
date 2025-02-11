@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Library</h1>
-    <button>+ Add Books</button>
-    <form>
+    <button onclick="addBookFormDisplay()">+ Add Books</button>
+    <form class="form">
         <h2>Form</h2>
         <label for="bookName">Book's Name: </label>
         <input type="text" id="bookName" name="bookName" required>
@@ -20,8 +20,8 @@
         <label for="status">Status: </label>
         <input type="button" value="read">
 
-        <button type="submit">Submit</button>
-         <button type="button">Cancel</button>
+        <button class="submit" type="submit">Submit</button>
+         <button onclick="closeForm()" type="button">Cancel</button>
     </form>
     <ul class="library">
 

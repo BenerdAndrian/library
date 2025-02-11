@@ -27,6 +27,29 @@ function displayLibrary(){
         theLib.appendChild(list);
     }
 }
+//form display
+function addBookFormDisplay(){
+    const theForm=document.querySelector(".form");
+    theForm.style.display="block";
+    
+}
+//form closing
+function closeForm(){
+    const theForm=document.querySelector(".form");
+    theForm.style.display="none";
+}
+//submitting form
+const toSubmit=document.querySelector(".submit");
+toSubmit.addEventListener("click",function(e){
+    e.preventDefault();
+    const bookName=document.getElementById("bookName").value;
+    const bookAuthor=document.getElementById("bookAuthor").value;
+    const bookPages=document.getElementById("bookPages").value;
+    const newBook=new Book(bookName,bookAuthor,bookPages,"not read");
+    addBookToLibrary(newBook);
+    displayLibrary();
+})
+
 // instantiate some books for library
 const book1=new Book("Lonely Wolf","Silver lin",266,"not read");
 const book2=new Book("The Rain Upside Down","Michael Nots",418,"not read");
@@ -38,3 +61,5 @@ addBookToLibrary(book2);
 addBookToLibrary(book3);
 addBookToLibrary(book4);
 displayLibrary();
+
+
