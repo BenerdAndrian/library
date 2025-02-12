@@ -38,6 +38,15 @@ li{
     color:black;
     border:1px solid;
     padding:1rem;
+    
+
+}
+.homepage{
+    margin-top:5rem;
+}
+.homepage a{
+    text-decoration: none;
+    color:bisque;
 }
 .sidebar h1{
     color:white;
@@ -97,6 +106,7 @@ li.book{
     justify-content:center;
     background-color:bisque;
     overflow:auto;
+    flex-shrink:1;
 }
 .readStatus{
     background-color:white;
