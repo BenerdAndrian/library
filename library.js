@@ -23,6 +23,9 @@ function displayLibrary(){
                         <p>Author: ${library[i].bookAuthor}</p>
                          <p>Pages: ${library[i].bookPages}</p>
                          <p>Status: <button>${library[i].status}</button></p>
+                         <span style="display:inline-block;margin-top:1rem;"><svg class="toDelete" style="margin-right:0.5rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                               <img class="toAdjust" style="width:24px;height:23px" src="adjust.svg" alt="adjust icon">
+                          </span>
         `
         theLib.appendChild(list);
     }
@@ -33,6 +36,7 @@ function addBookFormDisplay(){
     theForm.style.display="block";
     
 }
+
 //form closing
 function closeForm(){
     const theForm=document.querySelector(".form");
@@ -45,11 +49,19 @@ toSubmit.addEventListener("click",function(e){
     const bookName=document.getElementById("bookName").value;
     const bookAuthor=document.getElementById("bookAuthor").value;
     const bookPages=document.getElementById("bookPages").value;
-    const newBook=new Book(bookName,bookAuthor,bookPages,"not read");
+    const readStatus=document.querySelector(".readStatus").value;
+    const newBook=new Book(bookName,bookAuthor,bookPages,readStatus);
     addBookToLibrary(newBook);
     displayLibrary();
 })
-
+const readStatus=document.querySelector(".readStatus");
+readStatus.addEventListener("click",()=>{
+if(readStatus.value==="Not Read")
+readStatus.value="Read"
+else{
+    readStatus.value="Not Read";
+}
+})
 // instantiate some books for library
 const book1=new Book("Lonely Wolf","Silver lin",266,"not read");
 const book2=new Book("The Rain Upside Down","Michael Nots",418,"not read");

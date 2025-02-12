@@ -17,11 +17,14 @@
         <input type="text" id="bookAuthor" name="bookAuthor" required>
         <label for="bookPages">Book's Pages: </label>
         <input type="text" required id="bookPages" name="bookPages">
-        <label for="status">Status: </label>
-        <input type="button" value="read">
+        <label style="display:inline;" for="status">Status: </label>
+        <input type="button" class="readStatus" value="read">
 
-        <button class="submit" type="submit">Submit</button>
-         <button onclick="closeForm()" type="button">Cancel</button>
+        <span style="display:block;">
+            <button class="submit" type="submit">Submit</button>
+            <button onclick="closeForm()" type="button">Cancel</button>
+        </span>
+        
     </form>
     <ul class="library">
 
