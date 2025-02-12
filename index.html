@@ -16,7 +16,7 @@
                     <img style=" width:100px;height:100px;border-radius:50px" src="draw-a-personalized-pixel-art-avatar-of-you-in-my-style.webp" alt="">
                     <q>Look how many books i have read ! . Although i dont like reading books alot but i would love to read for new knowledge,especially books written by well-experienced writer who has life insights richness.</q>
                 </span>
-                <button onclick="addBookFormDisplay()">+ Add Books</button>
+                <button class="bookAddBtn">+ Add Books</button>
             </header>
             <ul class="library">
     
@@ -26,9 +26,10 @@
         <div class="sidebar">
             <h1>Select Option</h1>
          <ul>
-            <li>read</li>
-            <li>not read</li>
-            <li>back to main page</li>
+            <li class="readCategory">Read</li>
+            <li class="notReadCategory">Not Read</li>
+            <li class="All">All Books</li>
+            <li style="margin-top:5rem; display:flex;align-items:center"><a href=""></a><span>back to main page</span> <svg style="width:38px;height:38px;fill:bisque;margin-left:1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>keyboard-return</title><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg></li>
          </ul>
         </div>
        
@@ -48,7 +49,7 @@
         <span style="display:block;">
             <button class="submit" type="submit">Submit</button>
             <button class="change">Change</button>
-            <button onclick="closeForm()" type="button">Cancel</button>
+            <button class="cancelBtn" type="button">Cancel</button>
         </span>
         
     </form>

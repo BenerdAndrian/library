@@ -25,7 +25,11 @@ li{
    
     display:grid;
     grid-template-columns:400px 1fr;
+    grid-template-rows:100vh;
     gap:2rem;
+}
+.container .content{
+    overflow:auto;
 }
 .sidebar{
     grid-column:1/2;
@@ -49,7 +53,7 @@ li{
     color:bisque;
     padding:0.65rem;
     background-color:rgb(53, 163, 163);
-
+    cursor:pointer;
 }
 .content{
     grid-column:2/3;
@@ -85,14 +89,14 @@ header button{
 li.book{
     padding:1rem;
     border:1px solid;
-    width:20rem;
-    height:300px;
+    width:22rem;
+    height:25rem;
     text-align:center;
     display:flex;
     flex-direction:column;
     justify-content:center;
     background-color:bisque;
-
+    overflow:auto;
 }
 .readStatus{
     background-color:white;
@@ -118,8 +122,9 @@ li.book svg{
     height:30px;
 
 }
+
 form{
-    width:50vw;
+    width:60vw;
     position:absolute;
     top:50%;
     left:50%;
@@ -128,6 +133,8 @@ form{
     background-color:grey;
     padding:2rem;
     display:none;
+    padding:1rem;
+    font-size:1.5rem;
 }
 
 form h2{
@@ -136,11 +143,24 @@ form h2{
 form label{
     display:block;
     font-size:1.3rem;
+    margin:1rem;
 }
 form input:not(.readStatus){
-    width:100%;
+    width:95%;
     font-size:1.2rem;
+    margin:1rem;
+    padding:1rem;
+
+}
+.readStatus{
+    padding:1.2rem;
+    font-size:1rem;
 }
 .toDelete,.toAdjust{
+    cursor:pointer;
+}
+.submit,.change,.cancelBtn{
+    padding:0.3rem;
+    font-size:1rem;
     cursor:pointer;
 }
