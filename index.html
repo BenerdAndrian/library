@@ -7,8 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Library</h1>
-    <button onclick="addBookFormDisplay()">+ Add Books</button>
+    <div class="container">
+        <div class="content">
+            <header>
+                <h1>Library</h1>
+               
+                <span class="quotes">
+                    <img style=" width:100px;height:100px;border-radius:50px" src="draw-a-personalized-pixel-art-avatar-of-you-in-my-style.webp" alt="">
+                    <q>Look how many books i have read ! . Although i dont like reading books alot but i would love to read for new knowledge,especially books written by well-experienced writer who has life insights richness.</q>
+                </span>
+                <button onclick="addBookFormDisplay()">+ Add Books</button>
+            </header>
+            <ul class="library">
+    
+            </ul>
+        </div>
+       
+        <div class="sidebar">
+            <h1>Select Option</h1>
+         <ul>
+            <li>read</li>
+            <li>not read</li>
+            <li>back to main page</li>
+         </ul>
+        </div>
+       
+    </div>
+    
     <form class="form">
         <h2>Form</h2>
         <label for="bookName">Book's Name: </label>
@@ -27,9 +52,6 @@
         </span>
         
     </form>
-    <ul class="library">
-
-    </ul>
     <script src="library.js"></script>
 </body>
 </html>
