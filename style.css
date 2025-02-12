@@ -79,3 +79,6 @@ form input:not(.readStatus){
     width:100%;
     font-size:1.2rem;
 }
+.toDelete,.toAdjust{
+    cursor:pointer;
+}
