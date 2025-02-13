@@ -11,12 +11,12 @@ h1{
     text-align:center;
 }
 .quotes{
-    font-size:1.2rem;
+    font-size:0.8rem;
     display:flex;
     align-items:center;
 }
 header{
-    padding:2rem;
+    padding:1rem;
 }
 li{
     list-style: none;
@@ -24,9 +24,9 @@ li{
 .container{
    
     display:grid;
-    grid-template-columns:400px 1fr;
+    grid-template-columns:250px 1fr;
     grid-template-rows:100vh;
-    gap:2rem;
+    gap:1.2rem;
 }
 .container .content{
     overflow:auto;
@@ -37,12 +37,12 @@ li{
     background-color:rgb(143, 143, 143);
     color:black;
     border:1px solid;
-    padding:1rem;
+    padding:0.75rem;
     
 
 }
 .homepage{
-    margin-top:5rem;
+    margin-top:3rem;
 }
 .homepage a{
     text-decoration: none;
@@ -54,20 +54,20 @@ li{
 .sidebar ul{
     display:flex;
     flex-direction:column;
-    gap:1rem;
-    margin-top:2rem;
+    gap:0.7rem;
+    margin-top:1.2rem;
 }
 .sidebar ul li{
-    font-size:2rem;
+    font-size:1.2rem;
     color:bisque;
-    padding:0.65rem;
+    padding:0.4rem;
     background-color:rgb(53, 163, 163);
     cursor:pointer;
 }
 .content{
     grid-column:2/3;
     display:grid;
-    grid-template-rows:300px 1fr;
+    grid-template-rows:200px 1fr;
 }
 header{
     grid-row:1/2;
@@ -75,12 +75,12 @@ header{
     color:white;
 }
 header button{
-    padding:1rem;
+    padding:0.7rem;
     background-color:rgb(53, 163, 163);
-    font-size:1.2rem;
+    font-size:0.85rem;
     color:bisque;
-    border-radius:0.5rem;
-    margin-top:1rem;
+    border-radius:0.35rem;
+    margin-top:0.4rem;
     cursor:pointer;
 }
 .library{
@@ -89,17 +89,17 @@ header button{
     border:1px solid;
     width:70vw;
     margin:auto;
-    gap:2rem;
+    gap:1rem;
     flex-wrap:wrap;
     justify-content:center;
-    margin-top:2rem;
-    padding:2rem;
+    margin-top:1rem;
+    padding:1rem;
 }
 li.book{
-    padding:1rem;
+    padding:0.5rem;
     border:1px solid;
-    width:22rem;
-    height:25rem;
+    width:12rem;
+    height:14rem;
     text-align:center;
     display:flex;
     flex-direction:column;
@@ -115,36 +115,35 @@ li.book{
  
 }
 li.book h3{
-    font-size:1.5rem;
+    font-size:0.9rem;
 } 
 li.book p{
-    font-size:1rem;
+    font-size:0.7rem;
     color:grey;
-    margin:0.8rem;
+    margin:0.5rem;
 }
 li.book p button{
-    padding:0.4rem;
-    font-size:1rem;
+    padding:0.25rem;
+    font-size:0.6rem;
     cursor:pointer;
 }
 li.book svg{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
 
 }
 
 form{
-    width:60vw;
+    width:50vw;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     z-index:1;
     background-color:grey;
-    padding:2rem;
-    display:none;
     padding:1rem;
-    font-size:1.5rem;
+    display:none;
+    font-size:1rem;
 }
 
 form h2{
@@ -152,25 +151,25 @@ form h2{
 }
 form label{
     display:block;
-    font-size:1.3rem;
-    margin:1rem;
+    font-size:1rem;
+    margin:0.7rem;
 }
 form input:not(.readStatus){
     width:95%;
-    font-size:1.2rem;
-    margin:1rem;
-    padding:1rem;
+    font-size:0.7rem;
+    margin:0.6rem;
+    padding:0.6rem;
 
 }
 .readStatus{
-    padding:1.2rem;
-    font-size:1rem;
+    padding:0.6rem;
+    font-size:0.8rem;
 }
 .toDelete,.toAdjust{
     cursor:pointer;
 }
 .submit,.change,.cancelBtn{
-    padding:0.3rem;
-    font-size:1rem;
+    padding:0.2rem;
+    font-size:0.7rem;
     cursor:pointer;
 }
