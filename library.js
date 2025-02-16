@@ -1,12 +1,20 @@
 const library=[];
 
 //construction object
-function Book(bookName,bookAuthor,bookPages,status){
+class Book{
+    constructor(bookName,bookAuthor,bookPages,status){
     this.bookName=bookName;
     this.bookAuthor=bookAuthor;
     this.bookPages=bookPages;
     this.status=status;
+    }
+    changeStatus(){
+    this.status="read"?"unread":"read"
+     return this.status
+    }
 }
+
+
 // add Book to library function
 function addBookToLibrary(book){
     library.push(book);
@@ -33,7 +41,7 @@ function displayLibrary(array){
         theLib.appendChild(list);
     }
     delBook();
-    changeStatus();
+   
     adjustBook();
     
 }
@@ -73,19 +81,19 @@ toSubmit.addEventListener("click",function(e){
     displayLibrary(library);
 
 })
-function changeStatus(){
-    const readStatus=document.querySelector(".readStatus");
-    readStatus.addEventListener("click",()=>{
-    if(readStatus.value==="Not Read")
-    readStatus.value="Read"
-    else{
-        readStatus.value="Not Read";
-    }
+// function changeStatus(){
+//     const readStatus=document.querySelector(".readStatus");
+//     readStatus.addEventListener("click",()=>{
+//     if(readStatus.value==="Not Read")
+//     readStatus.value="Read"
+//     else{
+//         readStatus.value="Not Read";
+//     }
 
-    })
+//     })
     
-}
-changeStatus();
+// }
+// changeStatus();
 
 //adding some advanced finding
 function advancedFinding(){
@@ -127,6 +135,9 @@ const book2=new Book("The Rain Upside Down","Michael Nots",418,"Not Read");
 const book3=new Book("By The Dawn","Selena Gomez",188,"Not Read");
 const book4=new Book("A Freakin' Pretty Girl","Indiana Gospel",317,"Read");
 const book5=new Book("Nature Sabotaging","Indiana Gospel",317,"Read");
+const statusw=document.querySelector(".readStatus")
+book1.changeStatus()
+
 //add to library array
 addBookToLibrary(book1);
 addBookToLibrary(book2);
